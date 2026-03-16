@@ -2,7 +2,6 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Platform from "@/components/Platform";
-import Capabilities from "@/components/Capabilities";
 import Jurisdictions from "@/components/Jurisdictions";
 import ValidatedData from "@/components/ValidatedData";
 import TheEngine from "@/components/TheEngine";
@@ -18,8 +17,6 @@ export default function Home() {
       <Problem />
       <div className="section-rule" />
       <Platform />
-      <div className="section-rule" />
-      <Capabilities />
       <div className="section-rule" />
       <Jurisdictions />
       <div className="section-rule" />

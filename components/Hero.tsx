@@ -61,9 +61,9 @@ const fadeUp = (delay: number) => ({
 /*  Stats data                                                         */
 /* ------------------------------------------------------------------ */
 const stats: { value: number; suffix: string; label: string }[] = [
-  { value: 766, suffix: " GPM", label: "Peak Flow" },
-  { value: 200, suffix: "+", label: "Jurisdictions" },
-  { value: 6, suffix: "", label: "States" },
+  { value: 50, suffix: "", label: "States" },
+  { value: 3000, suffix: "+", label: "Jurisdictions" },
+  { value: 25, suffix: "+", label: "Years Expertise" },
   { value: 5, suffix: " Min", label: "Time to Design" },
 ];
 

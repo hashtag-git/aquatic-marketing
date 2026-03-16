@@ -1,6 +1,5 @@
 const navLinks = [
   { label: "Intelligence", href: "#intelligence" },
-  { label: "Capabilities", href: "#capabilities" },
   { label: "Jurisdictions", href: "#jurisdictions" },
   { label: "The Engine", href: "#engine" },
 ];
