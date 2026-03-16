@@ -31,7 +31,7 @@ export default function Platform() {
   const gridInView = useInView(gridRef, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 lg:py-48 bg-bg">
+    <section id="platform" className="py-32 lg:py-48 bg-bg">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           ref={headerRef}

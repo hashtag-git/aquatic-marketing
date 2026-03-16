@@ -1,7 +1,8 @@
 const navLinks = [
-  { label: "Intelligence", href: "#intelligence" },
+  { label: "Platform", href: "#platform" },
   { label: "Jurisdictions", href: "#jurisdictions" },
-  { label: "The Engine", href: "#engine" },
+  { label: "Validation", href: "#validation" },
+  { label: "Engine", href: "#engine" },
 ];
 
 export default function Nav() {

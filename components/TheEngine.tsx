@@ -8,7 +8,7 @@ export default function TheEngine() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section ref={sectionRef} className="py-32 lg:py-48 bg-bg">
+    <section id="engine" ref={sectionRef} className="py-32 lg:py-48 bg-bg">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.p
           className="text-[11px] uppercase tracking-[0.25em] text-gold font-body mb-6"
