@@ -7,12 +7,12 @@ const cards = [
   {
     stat: "Complete",
     title: "Hydraulic Flow Analysis",
-    body: "Full system hydraulic analysis from pool geometry to final pipe sizing. Every value derived from first principles — not rules of thumb.",
+    body: "Full system hydraulic analysis from pool geometry to final pipe sizing. Segment-by-segment TDH calculation with automatic pipe diameter selection.",
   },
   {
     stat: "Automated",
-    title: "Pump & Equipment Selection",
-    body: "Equipment matched to calculated system requirements. Three-phase and single-phase treated as strictly separate systems. Selection is code-derived.",
+    title: "Pump & Filter Selection",
+    body: "Pump and filter system matched to calculated flow and head requirements. Three-phase and single-phase treated as strictly separate systems.",
   },
   {
     stat: "Code-Derived",
@@ -25,19 +25,19 @@ const cards = [
     body: "Six states. Hundreds of local authorities. Each jurisdiction's unique code requirements stored, maintained, and applied automatically.",
   },
   {
-    stat: "Integrated",
-    title: "Chemical Feed Sizing",
-    body: "Chlorinator and acid feed systems sized to pool volume, bather load, and jurisdiction chemical feeder standards. No manual lookup.",
+    stat: "Coordinated",
+    title: "MEP Letter Generation",
+    body: "Mechanical, electrical, and plumbing coordination letters generated automatically with project-specific calculated values populated throughout.",
   },
   {
-    stat: "2010 ADA",
-    title: "ADA Requirements",
-    body: "Pool lift placement, accessible deck clearances, compliant entry and egress. Every ADA requirement applied to the specific pool configuration.",
+    stat: "Multi-Pool",
+    title: "Water Features & Complex Facilities",
+    body: "Support for multiple pool types per project — main pools, wading pools, spas, activity pools — each with independent hydraulic systems and turnover requirements.",
   },
   {
-    stat: "SP-1",
-    title: "Equipment Scheduling",
-    body: "Every fixture and accessory — derived, counted, and scheduled into a complete equipment package ready for permit submission.",
+    stat: "Instant",
+    title: "Lighting & Capacity",
+    body: "Underwater lighting requirements and bather capacity calculated per jurisdiction code. Virginia and Maryland methods handled independently.",
   },
   {
     stat: "Validated",
