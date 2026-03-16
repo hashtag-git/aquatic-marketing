@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:         #06080B;
+  --bg-surface: #0D1117;
+  --bg-raised:  #141B24;
+  --accent:     #0EA5E9;
+  --accent-dim: #0369A1;
+  --glow:       rgba(14,165,233,0.15);
+  --gold:       #D4AF72;
+  --text-primary:   #F0F4F8;
+  --text-secondary: #8FA3B8;
+  --text-muted:     #4A5C6E;
+  --border:     rgba(14,165,233,0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#__next, body, html {
+  width: 100%;
+}
+
+/* Grain texture overlay */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Water caustic hero background */
+.caustic {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.caustic::before,
+.caustic::after {
+  content: '';
+  position: absolute;
+  inset: -50%;
+}
+.caustic::before {
+  background: radial-gradient(ellipse 600px 400px at 25% 35%, rgba(14,165,233,0.06), transparent);
+  animation: c1 14s ease-in-out infinite;
+}
+.caustic::after {
+  background: radial-gradient(ellipse 500px 500px at 75% 55%, rgba(14,165,233,0.04), transparent);
+  animation: c2 18s ease-in-out infinite;
+}
+.caustic-extra-1 {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(ellipse 450px 550px at 55% 25%, rgba(14,165,233,0.05), transparent);
+  animation: c3 12s ease-in-out infinite;
+}
+.caustic-extra-2 {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(ellipse 650px 350px at 30% 70%, rgba(14,165,233,0.035), transparent);
+  animation: c4 20s ease-in-out infinite;
+}
+.caustic-extra-3 {
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(ellipse 400px 400px at 80% 40%, rgba(14,165,233,0.04), transparent);
+  animation: c5 16s ease-in-out infinite;
+}
+
+@keyframes c1 {
+  0%, 100% { transform: translate(0,0) rotate(0deg); }
+  33% { transform: translate(5%,-3%) rotate(2deg); }
+  66% { transform: translate(-3%,5%) rotate(-1deg); }
+}
+@keyframes c2 {
+  0%, 100% { transform: translate(0,0); }
+  33% { transform: translate(-4%,6%) rotate(-2deg); }
+  66% { transform: translate(6%,-2%) rotate(1deg); }
+}
+@keyframes c3 {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(3%,4%) scale(1.05); }
+}
+@keyframes c4 {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-5%,-3%) scale(0.95); }
+}
+@keyframes c5 {
+  0%, 100% { transform: translate(0,0); }
+  50% { transform: translate(4%,-5%) rotate(1deg); }
+}
+
+/* Section divider */
+.section-rule {
+  height: 1px;
+  background: var(--border);
+  width: 100%;
+}
+
+/* Horizontal scroll snap */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-snap-x > * {
+  scroll-snap-align: start;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent-dim); border-radius: 3px; }
+
+/* Selection */
+::selection {
+  background: rgba(14,165,233,0.25);
+  color: white;
+}
+
+/* Typewriter cursor */
+.tw-cursor::after {
+  content: '▎';
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
