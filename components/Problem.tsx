@@ -12,7 +12,7 @@ const rows = [
   {
     number: "02",
     title: "200+ jurisdictions. Zero shared standards.",
-    body: "Virginia mandates 100% skimmer suction. Maryland requires an 80/20 skimmer-to-drain split. Loudoun County enforces a 20\u201335 GPM-per-skimmer range that overrides state code. DC, West Virginia, Delaware, Pennsylvania \u2014 each has its own interpretation of ISPSC. Every project requires a designer who knows all of them.",
+    body: "Every state interprets the code differently. Counties override states. Local authorities add their own requirements on top. Six states, hundreds of jurisdictions, zero shared standards. Every project requires a designer who knows all of them.",
   },
   {
     number: "03",

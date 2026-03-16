@@ -8,35 +8,35 @@ import { motion } from "framer-motion";
 const jurisdictions = [
   {
     name: "Virginia",
-    rule: '100% skimmer suction · 12VAC5-460 · 6-hr turnover',
+    rule: "State-specific suction and turnover requirements",
   },
   {
     name: "Maryland",
-    rule: '80/20 skimmer/main drain · COMAR 10.17.01',
+    rule: "Unique drain split ratios and compliance codes",
   },
   {
     name: "Loudoun County",
-    rule: '20–35 GPM per skimmer (Chapter 838) · overrides state',
+    rule: "County-level overrides to state code",
   },
   {
     name: "Washington DC",
-    rule: '25-C DCMR · full ISPSC adoption',
+    rule: "District-specific ISPSC adoption",
   },
   {
     name: "West Virginia",
-    rule: '64 CSR 16',
+    rule: "State health department standards",
   },
   {
     name: "Pennsylvania",
-    rule: '28 Pa. Code Chapter 18',
+    rule: "DOH-regulated requirements",
   },
   {
     name: "Delaware",
-    rule: 'ISPSC · AHJ-discretionary barriers',
+    rule: "ISPSC framework with local discretion",
   },
   {
     name: "ADA — All Jurisdictions",
-    rule: '2010 Standards · lift, deck, egress',
+    rule: "2010 Standards · accessibility requirements",
   },
 ];
 

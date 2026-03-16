@@ -14,7 +14,7 @@ const steps = [
     step: "STEP 02",
     title: "AquaSolve Engine",
     body: "Constraint-satisfaction engine applies jurisdiction-specific code rules simultaneously. No approximations. No rule-of-thumb shortcuts. Code-derived formulas, every time.",
-    formula: "Skimmers = \u2308P/40\u2309 or \u2308A/400\u2309 \u00b7 TDH window: 55\u201375 ft",
+    formula: null,
   },
   {
     step: "STEP 03",

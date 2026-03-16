@@ -3,55 +3,49 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
-/* ------------------------------------------------------------------ */
-/*  Capability card data                                               */
-/* ------------------------------------------------------------------ */
 const cards = [
   {
-    stat: "766 GPM",
+    stat: "Complete",
     title: "Hydraulic Flow Analysis",
-    body: "Trunk-line TDH methodology. Hazen-Williams C=130 throughout. Pipe diameter is an output of flow requirements — never an assumption. The longest run drives the calculation.",
+    body: "Full system hydraulic analysis from pool geometry to final pipe sizing. Every value derived from first principles — not rules of thumb.",
   },
   {
-    stat: "55–75 ft TDH",
+    stat: "Automated",
     title: "Pump & Equipment Selection",
-    body: "Jandy JCP/JCPW and ePump VS series. Three-phase and single-phase matrices treated as strictly separate systems. Selection is code-derived, not catalog-browsed.",
+    body: "Equipment matched to calculated system requirements. Three-phase and single-phase treated as strictly separate systems. Selection is code-derived.",
   },
   {
-    stat: "⌈P/40⌉ or ⌈A/400⌉",
+    stat: "Code-Derived",
     title: "Skimmer & Return Calculation",
-    body: "The greater-of-two-formula applied per code. Loudoun County Chapter 838 per-skimmer GPM range enforced. Returns calculated at ⌈P/20⌉. Fractions always round up — per code.",
+    body: "Fixture counts calculated from pool geometry and jurisdiction-specific formulas. Every fraction rounded per code. Every override applied.",
   },
   {
     stat: "200+",
     title: "Jurisdiction Compliance",
-    body: "VA, MD, DC, WV, DE, PA. Each jurisdiction's skimmer suction ratios, turnover requirements, chemical feeder standards, and ADA mandates stored and applied automatically.",
+    body: "Six states. Hundreds of local authorities. Each jurisdiction's unique code requirements stored, maintained, and applied automatically.",
   },
   {
-    stat: "GPD · Vol · Load",
+    stat: "Integrated",
     title: "Chemical Feed Sizing",
-    body: "Chlorinator and acid feed system sizing based on pool volume, bather load, and jurisdiction chemical feeder standards. Automated. No manual lookup.",
+    body: "Chlorinator and acid feed systems sized to pool volume, bather load, and jurisdiction chemical feeder standards. No manual lookup.",
   },
   {
     stat: "2010 ADA",
     title: "ADA Requirements",
-    body: "Pool lift placement, accessible deck clearances, compliant entry and egress geometry. Every ADA 2010 Standards requirement applied to the specific pool configuration.",
+    body: "Pool lift placement, accessible deck clearances, compliant entry and egress. Every ADA requirement applied to the specific pool configuration.",
   },
   {
     stat: "SP-1",
     title: "Equipment Scheduling",
-    body: "Skimmer count, main drain configuration, floor returns, pool lights, depth markers, ladders, lifeguard chairs, rope anchors, backstroke stanchions — all derived and scheduled.",
+    body: "Every fixture and accessory — derived, counted, and scheduled into a complete equipment package ready for permit submission.",
   },
   {
-    stat: "766 → 536 GPM",
-    title: "Multi-Project Validation",
-    body: "Validated against real commercial projects — PG Pool (8,750 SF / 766 GPM), Kent Gardens (5,016 SF / 536 GPM), Heathcote Village, Westridge, Adelphi. The calculations match the permitted drawings.",
+    stat: "Validated",
+    title: "Real-World Accuracy",
+    body: "Calculations validated against permitted commercial projects across multiple jurisdictions. The outputs match the approved drawings.",
   },
 ];
 
-/* ------------------------------------------------------------------ */
-/*  Chevron SVGs                                                       */
-/* ------------------------------------------------------------------ */
 function ChevronLeft() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,9 +62,6 @@ function ChevronRight() {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/*  Capabilities                                                       */
-/* ------------------------------------------------------------------ */
 export default function Capabilities() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -83,18 +74,14 @@ export default function Capabilities() {
   return (
     <section className="py-32 lg:py-48">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section label */}
         <p className="text-[11px] uppercase tracking-[0.25em] text-gold font-body mb-6">
           CAPABILITIES
         </p>
-
-        {/* Headline */}
         <h2 className="font-display italic text-4xl lg:text-5xl text-text-primary mb-16">
           What the engine calculates.
         </h2>
       </div>
 
-      {/* Horizontal scroll container */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div
           ref={scrollRef}
@@ -122,7 +109,6 @@ export default function Capabilities() {
           ))}
         </div>
 
-        {/* Navigation arrows */}
         <div className="flex gap-2 mt-8">
           <button
             onClick={() => scroll("left")}
